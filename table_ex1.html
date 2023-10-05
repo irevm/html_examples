@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas en HTML5 - ejemplo 1</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Los elementos caption, thead, tbody y tfoot</h1>
+
+  <!--Per defecte, les vores de les taules no són visibles. 
+    Cal especificar amb CSS el tipus, gruix, color, etc.-->
+  <table>
+    <caption>Gastos anuales</caption>
+    <thead>
+      <tr>
+        <th>Concepto</th>
+        <th>Primer semestre</th>
+        <th>Segundo semestre</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alimentación</td>
+        <td>1500</td>
+        <td>1750</td>
+        <td>3250</td>
+      </tr>
+      <tr>
+        <td>Tecnología</td>
+        <td>850</td>
+        <td>30</td>
+        <td>880</td>
+      </tr>
+      <tr>
+        <td>Deporte</td>
+        <td>300</td>
+        <td>300</td>
+        <td>600</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <th>2650</th>
+        <th>2080</th>
+        <th>4730</th>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
