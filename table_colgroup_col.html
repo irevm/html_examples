@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taula amb colspan i rowspan</title>
+  <style>
+    td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Taula amb colgroup i col</h1>
+  
+  <table>
+    <colgroup span="2" style="background-color: bisque;"></colgroup>
+    <colgroup span="2" style="background-color: rgb(159, 206, 89);"></colgroup>
+    <caption>Gastos anuales</caption>
+    <thead>
+      <tr>
+        <th>Concepto</th>
+        <th>Primer semestre</th>
+        <th>Segundo semestre</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alimentación</td>
+        <td>1500</td>
+        <td>1750</td>
+        <td>3250</td>
+      </tr>
+      <tr>
+        <td>Tecnología</td>
+        <td>850</td>
+        <td>30</td>
+        <td>880</td>
+      </tr>
+      <tr>
+        <td>Deporte</td>
+        <td>300</td>
+        <td>300</td>
+        <td>600</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <th>2650</th>
+        <th>2080</th>
+        <th>4730</th>
+      </tr>
+    </tfoot>
+  </table>
+  <br>
+  <table>
+    <colgroup>
+      <col style="width: 10em;">
+      <col span="2" style="background-color: khaki;">
+    </colgroup>
+    <caption>Gastos anuales</caption>
+    <thead>
+      <tr>
+        <th>Concepto</th>
+        <th>Primer semestre</th>
+        <th>Segundo semestre</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alimentación</td>
+        <td>1500</td>
+        <td>1750</td>
+        <td>3250</td>
+      </tr>
+      <tr>
+        <td>Tecnología</td>
+        <td>850</td>
+        <td>30</td>
+        <td>880</td>
+      </tr>
+      <tr>
+        <td>Deporte</td>
+        <td>300</td>
+        <td>300</td>
+        <td>600</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <th>2650</th>
+        <th>2080</th>
+        <th>4730</th>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
