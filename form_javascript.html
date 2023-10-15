@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulari JavaScript</title>
+</head>
+<body>
+  
+  <h1>Formulari</h1>
+  <form id="form">
+    <p>
+      <label>
+        Nom
+        <input type="text" id="user-name" autocomplete="off">
+      </label>
+    </p>
+    <p>
+      <label>
+        Email
+        <input type="text" id="user-email" autocomplete="off">
+      </label>
+    </p>
+    <p>
+      <label>
+        Contrassenya
+        <input type="password" id="user-password" autocomplete="off">
+      </label>
+    </p>
+    <p>
+      <label>
+        Repeteix contrassenya
+        <input type="password" id="user-password-repeat" autocomplete="off">
+      </label>
+    </p>
+    <p>
+      <!--<input type="submit" id="button-login" value="Inicia sessió"/>-->
+      <button id="button-login">Inicia sessió</button>
+    </p>
+    
+  </form> 
+
+  <ul id="errors"></ul>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

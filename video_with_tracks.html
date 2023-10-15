@@ -6,12 +6,21 @@
   <title>Vídeo con subtítulos</title>
 </head>
 <body>
-  <video width="800" controls>
-    <source src="./video_sources/movie.mp4" type="video/mp4">
-    <source src="./video_sources/movie.webm" type="video/webm">
-    <track kind="subtitles" src="./video_sources/movie-es.vtt" lang="es" label="Español" default>
-    <track kind="subtitles" src="./video_sources/movie-en.vtt" lang="en" label="English">
-    
-    Este explorador no reconoce la etiqueta video, puede descargar el vídeo en<a href="./video_sources/movie.mp4" >Descargar video</a></video>
+  <main>
+    <video width="800" controls>
+      <source src="./video_sources/movie.mp4" type="video/mp4">
+      <source src="./video_sources/movie.webm" type="video/webm">
+      <track kind="subtitles" src="./video_sources/movie-es.vtt" lang="es" label="Español" default>
+      <track kind="subtitles" src="./video_sources/movie-en.vtt" lang="en" label="English">
+      
+      Este explorador no reconoce la etiqueta video, puede descargar el vídeo en <a href="./video_sources/movie.mp4" >Descargar video</a>
+    </video>
+
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/68O6eOGAGqA?si=iyt3rrHHmb50hcYR&amp;start=30" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+  </main>
   </body>
 </html>
