@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulari</title>
+  <style>
+    ul{
+      list-style: none;
+    }
+    li{
+      padding-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select, option, optgroup, datalist</h1>
+  <form action="" method="get">
+    <ul>      
+      <li>
+        <select name="llista1"> 
+          <option value="" selected>Tria una opció</option>
+          <option value="1">Opció 1</option>
+          <option value="2">Opció 2</option>
+          <option value="3" disabled>Opció 3</option>
+          <option value="4">Opció 4</option>
+        </select>
+      </li>
+      <li>
+        <select name="llista2" multiple size="4"> 
+          <option>Tenis</option>
+          <option>Natació</option>
+          <option>Futbol</option>
+          <option>Esquí</option>
+          <option>Patinatge</option>
+          <option>Yoga</option>
+        </select>
+      </li>     
+      <li>
+        <select name="llista3"> 
+          <optgroup label="Disponibles" disabled>
+            <option value="1">Volkswagen</option>
+            <option value="2">Kia</option>
+            <option value="3">Seat</option>
+          </optgroup>
+          <optgroup label="Sense stock">
+            <option value="4">Ferrari</option>
+            <option value="5">Volvo</option>
+          </optgroup>          
+        </select>
+      </li>
+      <li>
+        <input type="text" name="llenguatge" list="llenguatges" placeholder="Tria un llenguatge">
+        <datalist id="llenguatges">
+          <option>Java</option>
+          <option>C#</option>
+          <option>Python</option>
+          <option>JavaScript</option>
+        </datalist>
+      </li>
+      
+      <li>
+        <button>Envia</button>
+      </li>
+    </ul>
+    
+  </form>
+</body>
+</html>
