@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expressions regulars</title>
+</head>
+<body>
+  <form action="" method="post">
+    <b>Patró: \d[a-z]#</b>
+    <p>Exemples de valors vàlids: 1f#, 8i#, 0w#</p>
+    <p><input type="text" pattern="\d[a-z]#"></p>
+
+    <b>Patró: [0-9]{3}</b>
+    <p>Exemples de valors vàlids: 123, 456, 000</p>
+    <p><input type="text" pattern="[0-9]{3}"></p>
+
+    <b>Patró: \w{3}@[A-Za-z0-9]\.[A-Za-z]</b>
+    <p>Exemples de valors vàlids: a_b@a.a, a_b@0.a</p>
+    <p><input type="text" pattern="\w{3}@[A-Za-z0-9]\.[A-Za-z]"></p>
+
+    <b>Patró: [a-z]+[0-9]*</b>
+    <p>Exemples de valors vàlids: x, artg9, a9</p>
+    <p><input type="text" pattern="[a-z]+[0-9]*"></p>
+
+    <b>Una cadena que pot contenir lletres majúscules, minúscules, números i els caràcters !?-. La seva grandària: entre 8 i 12 caràcters.: </b>
+    <p>Exemples de valors vàlids: xxxxxxxx, aZ!1234-?? </p>
+    <p><input type="text" minlength="8" maxlength="12" pattern="[A-Za-z0-9\!\?\-]{8,12}"></p>
+   
+    <button>Check</button>
+
+  </form>
+  
+</body>
+</html>
